@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">lab1</string>
+    <string name="f_txt">select language and press OK</string>
+    <string name="plIn">please end inputting data</string>
+    <string name="inpF">firstly input some data</string>
+    <string name="empty"></string>
+    <string-array name="language">
+        <item>Python</item>
+        <item>C</item>
+        <item>C++</item>
+        <item>C#</item>
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>JavaScript</item>
+        <item>HTML and CSS</item>
+        <item>Ruby</item>
+        <item>Scala</item>
+        <item>Pascal</item>
+        <item>PHP</item>
+        <item>Perl</item>
+        <item>Lisp</item>
+        <item>SQL</item>
+    </string-array>
+</resources>
