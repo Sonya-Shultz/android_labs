@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">lab1</string>
     <string name="f_txt">select language and press OK</string>
+    <string name="no_data_in_db">Nothing in DB</string>
     <string name="plIn">please end inputting data</string>
     <string name="inpF">firstly input some data</string>
+    <string name="open">Open</string>
+    <string name="deleteDB">Delete from DB</string>
     <string name="empty"></string>
     <string-array name="language">
         <item>Python</item>
@@ -21,4 +24,6 @@
         <item>Lisp</item>
         <item>SQL</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

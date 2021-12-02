@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import java.lang.Error
 
 class FragmentA : Fragment() {
 
@@ -32,8 +33,20 @@ class FragmentA : Fragment() {
         button = view.findViewById(R.id.button)
         button.setOnClickListener() {
             val listener = activity as OnClearButtonListener?
+            writeToDB(spinner.selectedItem.toString())
             listener?.onClearButtonListener(spinner.selectedItem.toString()) }
         setAdapter()
+    }
+
+    private fun writeToDB(text: String){
+        try{
+            val db = this.context?.let { DBPart(it, null) }
+            db?.addData(text)
+            Toast.makeText(this.context, text + " added to database", Toast.LENGTH_LONG).show()
+        }
+        catch (e: Error){
+            Toast.makeText(this.context, "Error adding to DB", Toast.LENGTH_LONG).show()
+        }
     }
 
     private fun setAdapter(){
